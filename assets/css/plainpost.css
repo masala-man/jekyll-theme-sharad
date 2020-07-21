@@ -1,0 +1,51 @@
+h1.post-title
+{
+	font-size: 50px;
+}
+
+.post-info
+{
+	/* color: rgb(187, 187, 187); */
+	color: gray;
+	font-weight: 400;
+}
+
+.post-tags
+{
+	margin: 0px;
+	padding: 0%;
+	list-style-type:none;
+}
+.post-tags ul
+{
+	display: inline-block;
+}
+.post-tags li
+{
+	float: left;
+}
+
+.post-tags li + li:before{
+	content: "/";
+	padding: 2px;
+}
+
+@media only screen and (max-width: 767px)
+{
+	h1.post-title
+	{
+		font-size: 7.356vw;
+	}
+	.post-info
+	{
+		font-size: 13px;
+	}
+}
+
+@media only screen and (max-width: 426px)
+{
+	h1.post-title
+	{
+		font-size: 32px;
+	}
+}

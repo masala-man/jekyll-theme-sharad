@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{%include head.html %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/posts.css">
+	</head>
+	<body>
+		{%include header.html %}
+		<div class="content">
+			{% for post in page.posts %}
+				<h3 style="margin-bottom: 10px;	font-size: 32px; display: table;">
+					<div class="article-title-box">
+						<a class="article-title" href="{{ post.url }}">{{ post.title }}</a>
+						<div class="article-title-underline"></div>
+					</div>
+				</h3>
+				<div class="article-info">
+					<div style="display: inline-block;">
+						{{ post.date | date: "%-d %B %Y" }}
+					</div>
+					•
+					<div style="display: inline-block;">
+						{% capture words %}
+							{{ post.content | number_of_words }}
+						{% endcapture %}
+						{{ words | plus: 250 | divided_by: 180 | append: " minutes" }}
+					</div>
+				</div>
+				<div class="excerpt">{{ post.excerpt }}</div>
+			{% endfor %}
+			{%include footer.html %}
+		</div>
+	</body>
+</html>

@@ -1,0 +1,430 @@
+/* BROWSER  */
+
+::-webkit-scrollbar
+{
+	width: 0px;
+}
+::-webkit-scrollbar-track
+{
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb
+{
+	background: rgb(226, 66, 66);
+}
+::-webkit-scrollbar-thumb:hover
+{
+	background: rgb(175, 52, 52);
+}
+
+::selection
+{
+	background-color: rgb(66, 66, 66);
+	color: white;
+}
+
+body
+{
+	overflow-x: hidden;
+	background-image: url("/assets/img/landing.jpg");
+	background-size: initial;
+	-webkit-background-size: initial;
+	-moz-background-size: initial;
+	-o-background-size: initial;
+}
+
+
+/* NAV */
+
+nav
+{
+	text-align: center;
+	position: fixed;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+	width: 100%;
+	height: 70px;
+	top: 0px;
+	left: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0%;
+	font-family: "Roboto";
+}
+
+.nav-list
+{
+	display: block;
+	position: relative;
+	width: auto;
+	max-width: 72rem;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0%;
+	padding-top: 0px;
+	padding-left: 5vw;
+	padding-right: 5vw;
+	list-style-type:none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-list-item
+{
+	font-size: 40px;
+	font-weight: 600;
+	transform:translateY(10px);
+}
+
+a:hover.nav-links
+{
+	color: rgb(226, 66, 66);
+	transition: all ease 0.3s;
+	transition-property: color;
+	transition-duration: 0.3s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+}
+a:focus.nav-links
+{
+	color: rgb(226, 66, 66);
+}
+
+.progress-container
+{
+	display: inline;
+	position: fixed;
+	width: 100%;
+	height: 2px;
+	left: 0px;
+	right: 0px;
+	margin: 0px;
+	padding: 0px;
+	transform: translateY(5px);
+  }
+#progress-bar
+{
+	height: 2px;
+	background: rgb(226, 66, 66);
+	width: 0%;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* MAIN WINDOW */
+
+.content
+{
+	z-index: 5;
+	position: relative;
+	overflow: hidden;
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Roboto";
+	background-color: white;
+	margin-top: 15vh;
+	padding-right: 2rem;
+	padding-left: 2rem;
+	box-shadow:
+	0 0px 0.7px rgba(0, 0, 0, 0.02),
+	0 0px 1.8px rgba(0, 0, 0, 0.028),
+	0 0px 3.4px rgba(0, 0, 0, 0.035),
+	0 0px 6px rgba(0, 0, 0, 0.042),
+	0 0px 11.3px rgba(0, 0, 0, 0.05),
+	0 0px 27px rgba(0, 0, 0, 0.07);
+	border-radius: 3px;
+	margin-bottom: 25px;
+	padding-bottom: 10px;
+	/* min-height: 71vh; */
+	/* font-size: 18px; */
+}
+.content *
+{
+	max-width: 700px;
+}
+
+/* FOOTER */
+
+footer
+{
+	z-index: 5;
+	font-family: "Roboto Mono";
+	max-width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 40px;
+}
+
+footer p
+{
+	display: inline-block;
+	color: rgb(187, 187, 187);
+}
+footer a { text-decoration: none; color: rgb(187, 187, 187); }
+footer a:link {	text-decoration: none; color: rgb(187, 187, 187); }
+footer a:active { text-decoration: none; color: rgb(187, 187, 187); }
+footer a:visited { text-decoration: none; color: rgb(187, 187, 187); }
+footer a:hover { text-decoration: none; color: rgb(124, 124, 124); }
+
+#footer-copyright
+{
+	float: left;
+}
+#footer-social
+{
+	float: right;
+}
+
+/* MARKDOWN */
+
+h1
+{
+	font-size: 35px;
+}
+
+h2
+{
+	font-size: 28px;
+}
+
+h3
+{
+	font-size: 20px;
+}
+
+h4
+{
+	font-size: 18px;
+}
+
+h5
+{
+	font-size: 18px;
+}
+
+
+.center
+{
+	text-align: center;
+}
+
+.right
+{
+	text-align: right;
+}
+
+a
+{
+	width: 100%;
+	height: 100%;
+}
+a:link
+{
+	text-decoration: none;
+	color: rgb(226, 66, 66);
+}
+a:visited
+{
+	text-decoration: underline;
+	/* color: rgb(175, 52, 52); */
+	color: rgb(226, 66, 66);
+}
+a:hover
+{
+	text-decoration: underline;
+	text-decoration-color: rgb(226, 66, 66);
+}
+a:active
+{
+	text-decoration: none;
+	color: rgb(175, 52, 52);
+}
+
+code
+{
+	display: inline;
+	overflow: auto;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+	font-size: 13px;
+	padding: 0px;
+	border-color: rgb(230, 230, 230);
+}
+pre code
+{
+	display: block;
+	background-color: rgb(230, 230, 230);
+	padding-bottom: 4px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-left: 8px;
+	border-radius: 5px;
+	border-style: solid;
+}
+
+code::-webkit-scrollbar
+{
+	height: 5px;
+}
+code::-webkit-scrollbar-track
+{
+	background: rgb(230, 230, 230);
+}
+
+blockquote
+{
+	margin-left: 0px;
+	padding-left: 5px;
+	border-left: 5px solid rgb(226, 66, 66);
+	border-radius: 4px;
+}
+
+ul
+{
+	padding-left: 20px;
+	overflow-wrap: break-word;
+}
+
+ol
+{
+	padding-left: 20px;
+	overflow-wrap: break-word;
+}
+
+mark
+{
+	background-color: rgb(226, 66, 66);
+}
+
+abbr
+{
+	text-decoration-color: rgb(226, 66, 66);
+}
+
+table:not([class])
+{
+	border-collapse:separate;
+	/* border:solid rgb(187, 187, 187) 2px; */
+	border-radius: 2px;
+	-moz-border-radius: 6px;
+	border-spacing: 0px;
+}
+
+td:not([class]), th:not([class])
+{
+	padding: 3px;
+	/* border-left:solid rgb(187, 187, 187) 2px; */
+	/* border-top:solid rgb(187, 187, 187) 2px; */
+}
+
+th:not([class])
+{
+	border-top: none;
+}
+
+td:first-child:not([class]), th:first-child:not([class]) {
+	border-left: none;
+}
+
+img
+{
+	height: auto;
+	width: auto;
+	max-width:100%;
+	max-height:100%;
+	border-radius: 3px;
+}
+
+img + em
+{
+	display: block;
+	font-style: italic;
+	color: rgb(124, 124, 124);
+	text-align: center;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+hr {
+    border: none;
+    background-color: #ccc;
+    color: #ccc;
+    height: 1px;
+}
+
+/* OVERRIDES */
+
+a.nav-links
+{
+	color: black;
+}
+a:hover.nav-links
+{
+	text-decoration: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 768px)
+{
+	.content
+	{
+		padding-right: 1rem;
+		padding-left: 1rem;
+		border-radius: 0px;
+		margin-bottom: 0px;
+		box-shadow: unset;
+	}
+	body
+	{
+		background-image: unset;
+	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	.nav-links
+	{
+		font-size: 5.208vw;
+	}
+	#footer-copyright {float: none;}
+	#footer-social {float: none;}
+	footer p
+	{
+		display: block;
+		float: none;
+		left: 0px;
+		right: 0px;
+		font-size: 12px;
+
+	}
+	footer img
+	{
+		transform: scale(1.5);
+	}
+	h2
+	{
+		font-size: 26px;
+	}
+	h3
+	{
+		font-size: 20px;
+	}
+	img
+	{
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-block-end: 8px;
+	}
+	.content
+	{
+		min-height: 69vh;
+	}
+}
+
+@media only screen and (max-width: 426px)
+{
+}

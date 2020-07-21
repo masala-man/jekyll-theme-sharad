@@ -1,0 +1,29 @@
+# Site settings
+title: "Sharad"
+description: >
+  Write a description of your website here.
+# Contact
+author: Johnny Appleseed
+email: masala_man@protonmail.com
+twitter: masala_man60
+github: masala-man
+# Links
+permalink: /post/:year/:month/:day/:title:output_ext
+tag_permalink_style: pretty
+# Tags
+tag_page_layout: tag
+tag_page_dir: tag
+# Formatting
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    css_class   : 'syntax'
+excerpt_separator: <!--more-->
+cover: /assets/img/red.jpg
+background: /assets/img/landing.png
+# Collections
+collections:
+  pages:
+    output: true

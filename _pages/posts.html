@@ -1,0 +1,44 @@
+---
+title: Blog Posts
+permalink: "/posts/"
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{%include head.html %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/posts.css">
+	</head>
+	<body>
+		{%include header.html %}
+		<div class="content">
+			{% for page in site.posts %}
+			{% assign currentdate = page.date | date: "%Y" %}
+			{% if currentdate != date %}
+				<h2 style="font-size: 50px; margin-top: 41px;" id="y{{currentdate}}">{{ currentdate }}</h2>
+				{% assign date = currentdate %}
+			{% endif %}
+				<h3 style="margin-bottom: 10px;	font-size: 32px; display: table;">
+					<div class="article-title-box">
+						<a class="article-title" href="{{ page.url }}">{{ page.title }}</a>
+						<div class="article-title-underline"></div>
+					</div>
+				</h3>
+				<div class="article-info">
+					<div style="display: inline-block;">
+						{{ page.date | date: "%-d %B %Y" }}
+					</div>
+					•
+					<div style="display: inline-block;">
+						{% capture words %}
+							{{ page.content | number_of_words }}
+						{% endcapture %}
+						{{ words | plus: 250 | divided_by: 180 | append: " minutes" }}
+					</div>
+				</div>
+				<div class="excerpt">{{ page.excerpt }}</div>
+			{% endfor %}
+			{%include footer.html %}
+		</div>
+	</body>
+</html>

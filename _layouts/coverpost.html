@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		{%include head.html %}
+		<link rel="stylesheet" type="text/css" href="/assets/css/coverpost.css">
+	</head>
+	<style>
+		.cover
+		{
+			background-image: url({{ page.cover }});
+		}
+	</style>
+	<body>
+		{%include header.html %}
+		<div class="cover"></div>
+		<div class="content">
+			<h1 class="post-title" style="margin-bottom: 16px;">{{ page.title }}</h1>
+			<div class="post-info" style="margin-bottom: 30px; font-size: 16px;">
+				{{ page.author }} • {{ page.date | date: "%-D" }}
+				<ul class="post-tags">
+					{%for tag in page.tags %}
+						<li><a href="/tag/{{ tag }}">{{ tag }}</a></li>
+					{%endfor%}
+				</ul>
+				<br>
+			</div>
+			{{ content }}
+			{%include footer.html %}
+		</div>
+	</body>
+</html>
