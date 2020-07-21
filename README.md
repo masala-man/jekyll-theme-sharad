@@ -1,13 +1,6 @@
----
-layout: coverpost
-title: "Quick Start Guide"
-date: 2020-04-21
-author: Ayush Shenoy
-tags: jekyll
-cover: /assets/img/red.jpg
----
+![](https://cdn.discordapp.com/attachments/730969252865245267/734106565241733180/github-cover.png)
 
-Sharad is a fast, beautiful and responsive theme for your jekyll sites.
+**Sharad** is a fast, beautiful and responsive theme for your jekyll sites.
 
 # Features
 
