@@ -8,6 +8,7 @@ cover: /assets/img/red.jpg
 ---
 
 Sharad is a fast, beautiful and responsive theme for your jekyll sites.
+<!--more-->
 
 # Features
 
