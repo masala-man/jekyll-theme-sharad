@@ -42,11 +42,13 @@ Here's the front matter for this post
 
 ### Cover Image
 
-For posts with the `coverpost` layout, images are stored in `/assets/post` in four sizes (s,m,x,xl), used with the following screen widths:   
-`cover@s => 0-425px`  
-`cover@m => 425-768px`  
-`cover@l => 768-1440px`  
-`cover@xl => 1440px-`  
+For posts with the `coverpost` layout, images are stored in `/assets/post/yyyy-mm-dd-post-title` in four sizes (s,m,x,xl), used with the following screen widths:   
+```
+cover@s => 0-425px 
+cover@m => 425-768px  
+cover@l => 768-1440px  
+cover@xl => 1440px-
+```  
 
 The filetype is specified in the front matter. If the cover file is not found it will default to the cover value specified in `_config.yml`
 
