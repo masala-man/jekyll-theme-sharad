@@ -21,8 +21,8 @@ kramdown:
   syntax_highlighter_opts:
     css_class   : 'syntax'
 excerpt_separator: <!--more-->
-cover: /assets/img/red.jpg
-background: /assets/img/landing.png
+cover: /assets/img/cover.jpg
+background: /assets/img/background.png
 # Collections
 collections:
   pages:

@@ -4,7 +4,7 @@ title: "A Full and Comprehensive Style Test"
 date: 2019-08-15
 author: Ayush Shenoy
 tags: test style
-cover: /assets/img/banglore.jpg
+cover: jpg
 ---
 
 Below is just about everything you'll need to style in the theme. Check the source code to see the many embedded elements within paragraphs.

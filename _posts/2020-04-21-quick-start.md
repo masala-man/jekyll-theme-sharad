@@ -4,7 +4,7 @@ title: "Quick Start Guide"
 date: 2020-04-21
 author: Ayush Shenoy
 tags: jekyll
-cover: /assets/img/red.jpg
+cover: jpg
 ---
 
 Sharad is a fast, beautiful and responsive theme for your jekyll sites.
